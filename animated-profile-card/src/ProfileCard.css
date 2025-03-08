@@ -1,0 +1,144 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;  /* Fullscreen height */
+    width: 190vh;
+    padding-right:10 ;
+
+  }
+/* Card Styling */
+.card {
+    background: rgba(156, 154, 154, 0.15);
+    backdrop-filter: blur(20px);
+    color: #fefafa;
+    padding: 2rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+    width: 380px;
+    transition: all 0.8s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  /* Hover Effect */
+  .card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 16px 40px rgba(233, 7, 7, 0.496);
+  }
+  
+  /* Profile Image */
+  .profile-pic {
+    width: 140px;
+    height: 120px;
+    border-radius: 100%;
+    border: 4px solid white;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .profile-pic:hover {
+    transform: rotate(3deg) scale(1.1);
+  }
+  
+  /* Role */
+  .role {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #cec7c7;
+  }
+  
+  /* Bio */
+  .bio {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #c2bfbf;
+    padding: 0 10px;
+    line-height: 1.5;
+  }
+  
+  /* Buttons */
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 15px;
+  }
+  
+  .resume-btn, .github-btn,.linkedin-btn {
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  /* Resume Button */
+  .resume-btn {
+    background: #4CAF50;
+    color: white;
+  }
+  
+  .resume-btn:hover {
+    background: #388E3C;
+  }
+  
+  /* GitHub Button */
+  .github-btn {
+    background: #333;
+    color: white;
+  }
+  
+  .github-btn:hover {
+    background: #222;
+  }
+
+  .linkedin-btn {
+    background: #333;
+    color: white;
+  }
+  
+  .linkedin-btn:hover {
+    background: #222;
+  }
+
+  .projects-section {
+    margin-left: 50px;
+    max-width: 400px;
+    color: white;
+  }
+  
+  .projects-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .project-card {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Fade-in Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

@@ -1,0 +1,67 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #000000, #20013c);
+  position: relative;
+  overflow: hidden;
+  color: #222;
+}
+
+.blob {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  filter: blur(80px);
+  animation: blobMove 8s infinite alternate;
+}
+
+.blob1 {
+  top: -50px;
+  left: -50px;
+}
+
+.blob2 {
+  bottom: -100px;
+  right: -100px;
+  width: 350px;
+  height: 350px;
+}
+
+@keyframes blobMove {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(30px, 50px);
+  }
+}
+
+
+/* Dark Mode */
+.App.dark {
+  background: linear-gradient(135deg, #0168cf, #9fa0a1);
+  color: rgb(227, 219, 219);
+}
+
+/* Toggle Button */
+.toggle-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  background: #4f46e5;
+  color: white;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background: #9333ea;
+}
